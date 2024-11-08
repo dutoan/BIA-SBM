@@ -11,3 +11,11 @@ with(Superstore_Dataset, {
   
   list(total_Sales = total_Sales, total_Profit = total_Profit)
   })
+
+# Maximum and Minimum of Sales
+with(Superstore_Dataset, {
+  max_sales <- max(Sales)
+  min_sales <- min(Sales)
+
+  list(max_sales = max_sales, min_sales = min_sales)
+  })
