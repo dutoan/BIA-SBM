@@ -22,3 +22,8 @@ lbls <- paste(lbls, pct)
 lbls <- paste(lbls,"%",sep="") # ad % to labels
 pie(slices,labels = lbls, col=rainbow(length(lbls)),
     main="Pie Chart of Categories")
+
+#Count by Region
+region_count <- table(Superstore_Dataset$Region)
+
+region_count
